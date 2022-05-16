@@ -1,5 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
 });
+$(window).bind('scroll', function (e) {
+   parallaxScroll();
+});
+function parallaxScroll() {
+   var scrolled = $(window).scrollTop();
+   $('.header .header__fig3').css('bottom', (-20 - (scrolled * 0.2)) + 'px');
+   $('.two .header__fig2').css('bottom', (159 + (scrolled * 0.2)) + 'px');
+   $('.tok-wrap .header__fig3').css('top', (-850 + (scrolled * 0.1)) + 'px');
+   $('.two .header__fig3').css('bottom', (170 - (scrolled * 0.2)) + 'px');
+};
+$('.map__road').slick({
+   dots: false,
+   infinite: false,
+   arrows: true,
+   slidesToShow: 8,
+   slidesToScroll: 3,
+   touchThreshold: 100,
+   prevArrow: '<button type="button" class="slick-prev"><img src="img/edit-arrow.png" class="svg"></button>',
+   nextArrow: '<button type="button" class="slick-next"><img src="img/edit-arrow.png" class="svg2"></button>',
+   responsive: [
+      {
+         breakpoint: 767,
+         settings: {
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1
+         }
+      }
+   ]
+});
 // Burger
 $('.menu .button').click(function (event) {
    $(this).toggleClass('active');

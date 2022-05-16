@@ -21,9 +21,15 @@
 	<meta property="og:description" content="">
 
 	<!-- <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+
 
 </head>
 
@@ -87,8 +93,30 @@
 								</div>
 							</div>
 						</div>
+						<div class="nav__language d-flex">
+							<a href="main.html" class="active">
+								RU
+							</a>
+							<span>
+								/
+							</span>
+							<a href="main-eng.html">
+								ENG
+							</a>
+						</div>
 					</div>
-					<div class="nav__box d-flex">
+					<div class="nav__box d-flex wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
+						<div class="nav__language d-flex">
+							<a href="main.html" class="active">
+								RU
+							</a>
+							<span>
+								/
+							</span>
+							<a href="main-eng.html">
+								ENG
+							</a>
+						</div>
 						<ul class="nav__list d-flex">
 							<li>
 								<a href="#">
@@ -148,16 +176,27 @@
 					<img src="img/color1.png" alt="" class="header__fig1">
 					<img src="img/img1.png" alt="" class="header__fig2">
 					<img src="img/img2.png" alt="" class="header__fig3">
-					<img src="img/img3.png" alt="" class="header__fig4">
-					<div class="header__el"></div>
+					<div class="plash">
+						<img src="img/img3.png" alt="" class="plash__fig1  wow fadeInRight" data-wow-delay="1s"
+							data-wow-duration="3s">
+						<img src="img/img9.png" alt="" class="plash__fig2  wow fadeInRight" data-wow-delay="1.2s"
+							data-wow-duration="3s">
+					</div>
+					<div class="header__el wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1.5s"></div>
 					<img src="img/logo.png" alt="" class="header__logo">
 					<div class="header__content">
-						<h1>
+						<div class="rounds">
+							<img src="img/rounds.png" alt="" class="round__fig1 wow fadeInDown" data-wow-delay="0.5s"
+								data-wow-duration="1.5s">
+							<img src="img/rounds2.png" alt="" class="round__fig2 wow fadeInDown" data-wow-delay="1s"
+								data-wow-duration="1.5s">
+						</div>
+						<h1 class="wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 							Цифровая валюта от создателей
 							одной из крупнейших сети доставки
 							еды «ЁбиДоёби»
 						</h1>
-						<div class="header__info">
+						<div class="header__info wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 							<a href="#" class="btn btn1 header__btn">
 								Узнать больше
 							</a>
@@ -188,23 +227,31 @@
 			<div class="container">
 				<div class="top d-flex">
 					<h2>
+						<div class="rounds">
+							<img src="img/rounds.png" alt="" class="round__fig1 wow fadeInDown" data-wow-delay="0.5s"
+								data-wow-duration="1.5s">
+							<img src="img/rounds2.png" alt="" class="round__fig2 wow fadeInDown" data-wow-delay="1s"
+								data-wow-duration="1.5s">
+						</div>
 						Два мира. <br>
 						<span>Один #YBC</span>
 					</h2>
-					<p class="name">
+					<p class="name wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						о токене
 					</p>
 				</div>
-				<div class="two__box d-flex">
+				<div class=" two__box d-flex">
 					<img src="img/color1.png" alt="" class="header__fig1">
 					<img src="img/img1.png" alt="" class="header__fig2">
 					<img src="img/img2.png" alt="" class="header__fig3">
 					<div class="two-left">
-						<picture>
-							<source srcset="img/guys-mob.png" media="(max-width: 576px)">
-							<img src="img/guys.png" alt="" class="two-left__pic">
-						</picture>
-						<div class="two-left__content">
+						<div class="guys">
+							<img src="img/guys.png" alt="" class="guys1 wow fadeInLeft" data-wow-delay="1s"
+								data-wow-duration="1.5s">
+							<img src="img/guys-mob.png" alt="" class="guys2 wow fadeInLeft" data-wow-delay="1.2s"
+								data-wow-duration="1.5s">
+						</div>
+						<div class="two-left__content wow fadeInLeft" data-wow-delay="1.2s" data-wow-duration="1.5s">
 							<p class="two-left__name">
 								Константин Зимен <br>
 								и Дмитрий Прадед
@@ -215,7 +262,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="two-right">
+					<div class="two-right wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						<p class="two-right__name">
 							<span>YobiCoin</span> позволяет связать
 							реальный сектор услуг с цифровым
@@ -236,8 +283,9 @@
 					</div>
 				</div>
 				<div class="two-wrap">
-					<img src="img/decor2.png" alt="" class="two-wrap__pic">
-					<div class="two-wrap__content">
+					<img src="img/decor2.png" alt="" class="two-wrap__pic wow rotateInUpLeft" data-wow-delay="1s"
+						data-wow-duration="1.5s">
+					<div class="two-wrap__content wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						<p class="two-wrap__text">
 							Поэтому мы создаём инфраструктуру,
 							которая позволит делать это удобно,
@@ -259,15 +307,17 @@
 						В сердце <br>
 						<span>– BSC</span>
 					</h2>
-					<p class="name">
+					<p class="name wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						технологии
 					</p>
 				</div>
-				<picture>
-					<source srcset="img/bsc-mob.png" media="(max-width: 576px)">
-					<img src="img/bsc.png" alt="" class="two-left__pic">
-				</picture>
-				<div class="two__box d-flex">
+				<div class="edit-block1">
+					<img src="img/bsc.png" alt="" class="two-left__pic wow fadeInLeft" data-wow-delay="1.2s"
+						data-wow-duration="1.5s">
+					<img src="img/bsc-mob.png" alt="" class="two-left__pic edit-block1__pic wow fadeInRight"
+						data-wow-delay="1.2s" data-wow-duration="1.5s">
+				</div>
+				<div class="two__box d-flex wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 					<div class="two-right">
 						<p class="two-right__name">
 							<span>Наш токен создан <br class="mob1"> на базе
@@ -290,70 +340,84 @@
 					</div>
 				</div>
 			</div>
-			<section class="real" id="real">
-				<div class="container">
-					<div class="real__top d-flex">
-						<img src="img/color1.png" alt="" class="real__fig1">
-						<img src="img/fig2.png" alt="" class="real__fig2">
-						<p class="real__name">
-							В основе – <br class="new">
-							<span>реальный
-								бизнес </span>
+		</section>
+		<section class="real" id="real">
+			<div class="container">
+				<div class="real__top d-flex">
+					<img src="img/color1.png" alt="" class="real__fig1">
+					<img src="img/fig2.png" alt="" class="real__fig2 wow fadeInLeft" data-wow-delay="1.2s"
+						data-wow-duration="1.5s">
+					<p class="real__name">
+						В основе – <br class="new">
+						<span>реальный
+							бизнес </span>
+					</p>
+					<div class="real__info wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
+						<p class="real__el">
+							Ключевое отличие токена
+							YOBICOIN в том, что он
+							подкреплён реальным <br>
+							и прибыльным бизнесом.
 						</p>
-						<div class="real__info">
-							<p class="real__el">
-								Ключевое отличие токена
-								YOBICOIN в том, что он
-								подкреплён реальным <br>
-								и прибыльным бизнесом.
-							</p>
-							<p class="real__text">
-								Это не абстрактный проект, в основе которого
-								красивая идея – а реальный инструмент, который <br>
-								мы рассматриваем для развития и масштабирования
-								международного бизнеса.
-							</p>
-						</div>
-					</div>
-					<div class="scroll">
-						<img src="img/map.png" alt="" class="real__map">
-					</div>
-					<div class="real__top real__top_2 d-flex">
-						<picture>
-							<source srcset="img/logo-yo-mob.png" media="(max-width: 576px)">
-							<img src="img/logo-yo.png" alt="" class="real__fig3">
-						</picture>
-						<img src="img/color1.png" alt="" class="real__fig4">
-						<div class="real__info">
-							<p class="real__el">
-								Сегодня в сети «ЁбиДоёби»
-								более 140 филиалов в 2 странах
-								мира, а совокупная годовая
-								выручка предприятий превышает
-								2,5 млрд рублей.
-							</p>
-							<p class="real__text real__br">
-								Наш бренд знают и любят. <br>
-								Ему уже доверяют более 2 000 000 клиентов <br>
-								– и с каждым годом их всё больше.
-							</p>
-						</div>
+						<p class="real__text">
+							Это не абстрактный проект, в основе которого
+							красивая идея – а реальный инструмент, который <br>
+							мы рассматриваем для развития и масштабирования
+							международного бизнеса.
+						</p>
 					</div>
 				</div>
-			</section>
+				<div class="scroll">
+					<img src="img/map.png" alt="" class="real__map wow fadeInUp" data-wow-delay="1.2s"
+						data-wow-duration="1.5s">
+				</div>
+				<div class="real__top real__top_2 d-flex">
+					<picture class="wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
+						<source srcset="img/logo-yo-mob.png" media="(max-width: 576px)">
+						<img src="img/logo-yo.png" alt="" class="real__fig3">
+					</picture>
+					<img src="img/color1.png" alt="" class="real__fig4">
+					<div class="real__info wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
+						<p class="real__el">
+							Сегодня в сети «ЁбиДоёби»
+							более 140 филиалов в 2 странах
+							мира, а совокупная годовая
+							выручка предприятий превышает
+							2,5 млрд рублей.
+						</p>
+						<p class="real__text real__br">
+							Наш бренд знают и любят. <br>
+							Ему уже доверяют более 2 000 000 клиентов <br>
+							– и с каждым годом их всё больше.
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="info" id="info">
 			<div class="container">
 				<div class="top d-flex">
 					<h2>
+						<div class="rounds">
+							<img src="img/rounds.png" alt="" class="round__fig1 wow fadeInDown" data-wow-delay="0.5s"
+								data-wow-duration="1.5s">
+							<img src="img/rounds2.png" alt="" class="round__fig2 wow fadeInDown" data-wow-delay="1s"
+								data-wow-duration="1.5s">
+						</div>
 						<span>У нас нет цели заработать <br>
 							на токенах в моменте –</span>
 					</h2>
 				</div>
 				<div class="real__top real__top_2 d-flex">
 					<img src="img/color1.png" alt="" class="real__fig1">
-					<img src="img/graf1.png" alt="" class="real__fig3">
-					<div class="real__info">
+					<div class="block5">
+						<img src="img/graf1.png" alt="" class="block5__pic1">
+						<img src="img/11.png" alt="" class="block5__pic3 wow rotateInUpRight" data-wow-delay="1.5s"
+							data-wow-duration="1.5s">
+						<img src="img/22.png" alt="" class="block5__pic2 wow rotateInUpLeft" data-wow-delay="1s"
+							data-wow-duration="1.5s">
+					</div>
+					<div class="real__info wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						<p class="real__el">
 							мы преследуем большую
 							стратегическую цель по глобальной
@@ -384,12 +448,12 @@
 								– растёт
 								<span>#YBC</span>
 							</h2>
-							<p class="name">
+							<p class="name wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 								перспективы роста токена
 							</p>
 						</div>
 						<div class="info__flex d-flex">
-							<div class="info__content">
+							<div class="info__content wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 								<p class="info__name">
 									Выручка в «ЁбиДоёби» <br>
 									растёт ежегодно в 2,5 – 3 раза
@@ -408,12 +472,19 @@
 										реальных бизнес-показателей.</span>
 								</p>
 							</div>
-							<img src="img/graf2.png" alt="" class="info__pic">
+							<div class="block6">
+								<img src="img/graf2.png" alt="" class="block6__pic1 wow fadeInDown" data-wow-delay="0.5s"
+									data-wow-duration="2s">
+								<img src="img/new1.png" alt="" class="block6__pic2 wow fadeInDown" data-wow-delay="0.8s"
+									data-wow-duration="2s">
+								<img src="img/new2.png" alt="" class="block6__pic3 wow fadeInDown" data-wow-delay="1.2s"
+									data-wow-duration="2s">
+							</div>
 						</div>
 					</div>
 					<div class="info__item">
 						<div class="info__flex d-flex">
-							<div class="info__content">
+							<div class="info__content wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 								<p class="info__name">
 									Бизнес расширяется: открываем
 									страны СНГ и международную
@@ -438,7 +509,7 @@
 										на капитализацию токена в перспективе.</span>
 								</p>
 							</div>
-							<img src="img/block1.png" alt="" class="info__pic info-mob2">
+							<!-- <img src="img/block1.png" alt="" class="info__pic info-mob2"> -->
 							<div class="new-block1">
 								<img src="img/graf3.png" alt="" class="info__pic">
 								<img src="img/map1.png" alt="" class="info__map1 info__map wow fadeInUp" data-wow-delay="0.2s"
@@ -456,7 +527,7 @@
 					</div>
 					<div class="info__item">
 						<div class="info__flex d-flex">
-							<div class="info__content">
+							<div class="info__content wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 								<p class="info__name">
 									«ЁбиДоёби» – часть большой
 									семьи Puzzle Food
@@ -474,7 +545,7 @@
 										в «ЁбиДоёби».</span>
 								</p>
 							</div>
-							<div class="new-block4">
+							<div class="new-block4 wow fadeIn" data-wow-delay="1.4s" data-wow-duration="1.5s">
 								<img src="img/graf4.png" alt="" class="info__pic">
 								<div class="new-block4__flex d-flex">
 									<div class="new-block4__item">
@@ -495,7 +566,7 @@
 					</div>
 					<div class="info__item">
 						<div class="info__flex d-flex">
-							<div class="info__content">
+							<div class="info__content wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 								<p class="info__name">
 									Сжигаем 5% токенов <br>
 									каждый год. Токенов меньше. <br>
@@ -515,18 +586,18 @@
 							</div>
 							<div class="new-block2">
 								<img src="img/graf5.png" alt="" class="info__pic">
-								<img src="img/ring.png" alt="" class="info__ring1 info__ring wow fadeInDownBig"
+								<img src="img/ring.png" alt="" class="info__ring1 info__ring wow fadeInDown"
 									data-wow-delay="0.2s" data-wow-duration="1.5s">
-								<img src="img/ring.png" alt="" class="info__ring2 info__ring wow fadeInDownBig"
+								<img src="img/ring.png" alt="" class="info__ring2 info__ring wow fadeInDown"
 									data-wow-delay="0.4s" data-wow-duration="1.5s">
-								<img src="img/ring.png" alt="" class="info__ring3 info__ring wow fadeInDownBig"
+								<img src="img/ring.png" alt="" class="info__ring3 info__ring wow fadeInDown"
 									data-wow-delay="0.8s" data-wow-duration="2s">
-								<img src="img/ring.png" alt="" class="info__ring4 info__ring wow fadeInDownBig"
+								<img src="img/ring.png" alt="" class="info__ring4 info__ring wow fadeInDown"
 									data-wow-delay="1.1s" data-wow-duration="2.5s">
-								<img src="img/ring.png" alt="" class="info__ring5 info__ring wow fadeInDownBig"
+								<img src="img/ring.png" alt="" class="info__ring5 info__ring wow fadeInDown"
 									data-wow-delay="1.5s" data-wow-duration="3s">
 							</div>
-							<img src="img/block2.png" alt="" class="info__pic info-mob2">
+							<!-- <img src="img/block2.png" alt="" class="info__pic info-mob2"> -->
 						</div>
 					</div>
 				</div>
@@ -535,12 +606,17 @@
 		<section class="tok" id="tok">
 			<div class="container">
 				<div class="tok__flex d-flex">
-					<img src="img/el2.png" alt="" class="tok__pic">
-					<p class="name">
+					<div class="block7">
+						<img src="img/el2.png" alt="" class="block7__pic1 wow fadeInDown" data-wow-delay="0.5s"
+							data-wow-duration="1.5s">
+						<img src="img/bk.png" alt="" class="block7__pic2 wow fadeInDown" data-wow-delay="1s"
+							data-wow-duration="1.5s">
+					</div>
+					<p class="name wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						эмиссия и токеномика
 					</p>
 				</div>
-				<p class="tok__title">
+				<p class="tok__title wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
 					200 000 000
 					токенов
 				</p>
@@ -550,8 +626,9 @@
 				<div class="tok__box d-flex">
 					<img src="img/color1.png" alt="" class="real__fig1">
 					<img src="img/color1.png" alt="" class="real__fig11">
-					<img src="img/figure.png" alt="" class="tok__graph">
-					<ul class="tok__list">
+					<img src="img/figure.png" alt="" class="tok__graph wow fadeInLeft" data-wow-delay="1s"
+						data-wow-duration="1.5s">
+					<ul class="tok__list wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						<li class="d-flex">
 							<span>
 								30%
@@ -636,50 +713,50 @@
 				</div>
 				<div class="tok-wrap">
 					<img src="img/img2.png" alt="" class="header__fig3">
-					<p class="tok-wrap__title">
+					<p class="tok-wrap__title wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						Держатели токенов #YBC
 						получат возможность:
 					</p>
 					<ul class="tok-wrap__list">
-						<li class="d-flex">
+						<li class="d-flex wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s">
 							<p>
 								Оплачивать заказы частично <br>
 								или полностью внутри сети
 								«ЁбиДоёби» и партнёрских сетях
 							</p>
 						</li>
-						<li class="d-flex">
+						<li class="d-flex wow fadeInLeft" data-wow-delay="1.2s" data-wow-duration="1.5s">
 							<p>
 								Участвовать <br>
 								в спецпредложениях <br>
 								для держателей токенов
 							</p>
 						</li>
-						<li class="d-flex">
+						<li class="d-flex wow fadeInLeft" data-wow-delay="1.4s" data-wow-duration="1.5s">
 							<p>
 								Получать кэшбек <br>
 								с каждого заказа в YBC
 							</p>
 						</li>
-						<li class="d-flex">
+						<li class="d-flex wow fadeInLeft" data-wow-delay="1.6s" data-wow-duration="1.5s">
 							<p>
 								Участвовать в продажах эксклюзивных
 								NFT-токенов от «ЁбиДоёби»
 							</p>
 						</li>
-						<li class="d-flex">
+						<li class="d-flex wow fadeInLeft" data-wow-delay="1.8s" data-wow-duration="1.5s">
 							<p>
 								Фарминг токена #YBC
 							</p>
 						</li>
-						<li class="d-flex">
+						<li class="d-flex wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">
 							<p>
 								Стейкинг токена с доходностью <br>
 								до 180% годовых в токенах #YBC
 							</p>
 						</li>
 					</ul>
-					<a href="#" class="tok-wrap__btn btn btn1">
+					<a href="#" class="tok-wrap__btn btn btn1 wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						<p>
 							Подать заявку
 							на пресейл
@@ -696,14 +773,15 @@
 						<br>
 						<span>карта проекта</span>
 					</h2>
-					<a href="#" class="map__btn btn btn1">
+					<a href="#" class="map__btn btn btn1 wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 						Скачать ROADMAP
 					</a>
 					<img src="img/color1.png" alt="" class="real__fig1">
 				</div>
 				<div class="map__scroll">
+					<img src="img/edit-blue.png" alt="" class="edit__fig1">
 					<div class="map__road d-flex">
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="1.5s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2021
 							</p>
@@ -718,12 +796,13 @@
 								</p>
 								<p>
 									– Принятие решения
-									о готовности к запуску собственного токена. Сбор технической команды. Разработка концепции
+									о готовности к запуску собственного токена. <br> Сбор технической команды. Разработка
+									концепции
 									собственного токена. Разработка токена YobiCoin и тестирование системы.
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="1.6s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2022
 							</p>
@@ -750,7 +829,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="1.7s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2022
 							</p>
@@ -773,7 +852,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="1.8s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2022
 							</p>
@@ -792,7 +871,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="1.9s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2022
 							</p>
@@ -817,7 +896,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="2s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2023
 							</p>
@@ -838,7 +917,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="2.1s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2023
 							</p>
@@ -855,7 +934,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="2.2s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2023
 							</p>
@@ -871,7 +950,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="2.3s" data-wow-duration="1.5s">
 							<p class="map-item__year">
 								2023
 							</p>
@@ -889,7 +968,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="map-item">
+						<div class="map-item wow fadeInDown" data-wow-delay="2.4s" data-wow-duration="1.5s" id="last">
 							<p class="map-item__year">
 								2024
 							</p>
@@ -903,10 +982,9 @@
 								</p>
 							</div>
 						</div>
-						<img src="img/line.png" alt="" class="line">
+						<img src="img/line.png" alt="" class="line wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 					</div>
 				</div>
-
 			</div>
 		</section>
 		<section class="proj" id="proj">
@@ -915,7 +993,7 @@
 					Следи за <span>развитием <br>
 						проекта</span>
 				</h2>
-				<div class="proj__box d-flex">
+				<div class="proj__box d-flex wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
 					<div class="proj__left d-flex">
 						<a href="#" class="proj__link">
 							<img src="img/twitter.svg" alt="">
@@ -972,7 +1050,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer" id="footer">
+		<footer class="footer wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" id="footer">
 			<div class="container">
 				<div class="footer__box d-flex">
 					<a href="#" class="footer__logo">
@@ -1020,56 +1098,8 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div style="display:none;">
-		<div class="box-modal" id="popup-call2">
-			<div class="popup">
-				<div class="popup-call__box">
-					<div class="box-modal__close articmodal-close">
-						<svg class="icon">
-							<use xlink:href="img/svg-sprite.svg#close"></use>
-						</svg>
-					</div>
-					<p class="popup__name">
-						FILL THE FORM
-					</p>
-					<form action="" class="popup-form">
-						<input type="text" name="name" placeholder="NAME">
-						<input type="text" name="country" placeholder="COUNTRY">
-						<button class="btn sign-form__btn black-btn">
-							NEXT
-						</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<script>
-		(function () {
-			let speed = 2; // Скорость скролла.
-
-			let scroll = document.querySelector('.map__scroll');
-
-			let left = 0; // отпустили мышку - сохраняем положение скролла
-			let drag = false;
-			let coorX = 0; // нажали мышку - сохраняем координаты.
-
-			scroll.addEventListener('mousedown', function (e) {
-				drag = true;
-				coorX = e.pageX - this.offsetLeft;
-			});
-			document.addEventListener('mouseup', function () {
-				drag = false;
-				left = scroll.scrollLeft;
-			});
-			scroll.addEventListener('mousemove', function (e) {
-				if (drag) {
-					this.scrollLeft = left - (e.pageX - this.offsetLeft - coorX) * speed;
-				}
-			});
-
-		})();
-	</script>
 	<script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script>
 
