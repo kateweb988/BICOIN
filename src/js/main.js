@@ -9,6 +9,9 @@ function parallaxScroll() {
    $('.two .header__fig2').css('bottom', (159 + (scrolled * 0.2)) + 'px');
    $('.tok-wrap .header__fig3').css('top', (-850 + (scrolled * 0.1)) + 'px');
    $('.two .header__fig3').css('bottom', (170 - (scrolled * 0.2)) + 'px');
+   $('.header-nft .header__fig3').css('bottom', (110 - (scrolled * 0.2)) + 'px');
+   $('.two-nft__fig2').css('top', (400 - (scrolled * 0.2)) + 'px');
+   $('.get__fig1').css('top', (-50 - (scrolled * 0.2)) + 'px');
 };
 $('.map__road').slick({
    dots: false,
