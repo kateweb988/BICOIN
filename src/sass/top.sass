@@ -242,6 +242,26 @@ header
       width: auto
       height: auto
       background-color: #000c28
+      .new-flex 
+         align-items: center
+         justify-content: space-between
+         margin: 45px auto 0
+         max-width: 305px
+         width: 100%
+         position: relative
+         left: -10px
+         @media ( max-width: 576px )
+            left: -3px
+      .nav__language
+         margin-top: 0 !important
+         bottom: 0 !important
+         order: 2
+      .footer__logo
+         display: block !important
+         order: 1
+         width: 128px
+         img 
+            width: 100%
       .nav__list
          flex-direction: column
          text-align: center

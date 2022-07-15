@@ -2,8 +2,11 @@
    justify-content: space-between
    max-width: 1131px
 .two
-   padding: 10px 0 50px
+   padding: 10px 0 138px
    margin-top: -68px
+   @media ( max-width: 768px )
+      .two-right__info
+         margin-left: 0
    @media ( max-width: 576px )
       padding: 10px 0 20px
       .two-left .two-left__pic 
@@ -1087,7 +1090,7 @@
    transition: 0.5s
    width: 125px
    height: 125px
-   background: $white
+   // background: $white
    border-radius: 50%
    align-items: center
    justify-content: center
@@ -1097,11 +1100,11 @@
       height: 80px
    &:nth-child(3)
       img 
-         width: 75%
+         width: 100%
    &:hover
       transform: rotate(15deg)
    img 
-      width: 60%
+      width: 100%
 .new
    display: none
    @media ( max-width: 1200px ) 
