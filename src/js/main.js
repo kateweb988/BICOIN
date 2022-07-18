@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
 $(window).bind('scroll', function (e) {
    parallaxScroll();
 });
+window.onload = function () {
+   document.querySelector('.preloader').classList.add("preloader-remove");
+};
+$(window).on('load', function () {
+   $('.preloader').addClass("preloader-remove");
+});
 function parallaxScroll() {
    var scrolled = $(window).scrollTop();
    $('.header .header__fig3').css('bottom', (-20 - (scrolled * 0.2)) + 'px');
